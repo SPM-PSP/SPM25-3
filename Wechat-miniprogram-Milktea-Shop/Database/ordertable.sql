@@ -1,0 +1,10 @@
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('amy', '0002', '多肉芒芒甘露', '常规吸管,标准糖,正常冰', 27, 1, '2020-09-05 10:28:17', 120, 128);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('amy', '0003', '芝芝桃桃', '常规吸管,标准糖,正常冰', 30, 1, '2020-09-05 10:30:06', 121, 129);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('amy', '0012', '满杯红柚', '常规吸管,标准糖,正常冰', 25, 1, '2020-09-05 10:31:30', 122, 130);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('amy', '0010', '芝芝莓莓', '常规吸管,标准糖,正常冰', 32, 1, '2020-09-05 10:53:36', 123, 131);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('amy', '0012', '满杯红柚', '常规吸管,标准糖,正常冰', 25, 1, '2020-09-05 10:53:36', 123, 131);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('amy', '0003', '芝芝桃桃', '0糖低卡糖,常规吸管,标准糖,正常', 31, 1, '2020-09-05 11:11:31', 124, 132);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('amy', '0017', '椰椰谷物咖啡', '常规吸管,微糖,正常', 28, 1, '2020-09-05 11:11:31', 124, 132);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('mike', '0001', '多肉葡萄', '常规吸管,标准糖,正常冰', 29, 1, '2020-09-05 15:21:11', 125, 133);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('', '0002', '多肉芒芒甘露', '常规吸管,标准糖,正常', 27, 1, '2025-03-05 10:27:44', 126, 134);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('周杰伦', '0002', '红油小面', '常规吸管,标准糖,正常冰', 27, 1, '2025-03-12 09:42:06', 127, 135);

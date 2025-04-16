@@ -1,0 +1,94 @@
+/* pages/Aichat.wxss */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 聊天历史区域 */
+.chat-history {
+  flex: 1;
+  padding: 10px 0; /* 改为上下padding */
+  overflow-y: auto;
+}
+
+/* 消息行布局 */
+.message-row {
+  display: flex;
+  margin: 15rpx 20rpx;
+}
+
+/* 用户消息行（头像在右） */
+.user-row {
+  flex-direction: row-reverse;
+}
+
+/* 机器人消息行（头像在左） */
+.bot-row {
+  flex-direction: row;
+}
+
+/* 头像样式 */
+.avatar {
+  width: 80rpx;       /* 约40px */
+  height: 80rpx;      /* 约40px */
+  border-radius: 50%;
+  margin: 0 10rpx;    /* 约5px */
+}
+
+/* 消息内容基础样式 */
+.message-content {
+  max-width: 70%;
+  padding: 12rpx 20rpx;
+  border-radius: 12rpx;
+  word-wrap: break-word;
+}
+
+/* 用户消息样式 */
+.user-message {
+  background-color: #e7f3ff;
+  margin-left: 80rpx;  /* 留出头像空间 */
+}
+
+/* 机器人消息样式 */
+.bot-message {
+  background-color: #f0f0f0;
+  margin-right: 80rpx; /* 留出头像空间 */
+}
+
+/* 输入区域保持原样 */
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.input-field {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 8px 16px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* 可选增强样式 */
+.avatar {
+  border: 2rpx solid #fff;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+}
+
+.user-message {
+  box-shadow: 2rpx 4rpx 8rpx rgba(0, 122, 255, 0.1);
+}
+
+.bot-message {
+  box-shadow: 2rpx 4rpx 8rpx rgba(0, 0, 0, 0.05);
+}

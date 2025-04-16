@@ -1,0 +1,33 @@
+<!--pages/Aichat.wxml-->
+<view class="chat-container">
+  <!-- 聊天记录区域 -->
+  <scroll-view 
+    class="chat-history" 
+    scroll-y="true" 
+    scroll-with-animation="true" 
+    scroll-top="{{scrollTop}}"
+  >
+    <block wx:for="{{chatHistory}}" wx:key="index">
+      <!-- 用户消息（右侧带头像） -->
+      <view class="message-row user-row" wx:if="{{item.type === 'user'}}">
+        <image class="avatar" src="/images/user-avatar.png" />
+        <view class="message-content user-message">
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+
+      <!-- 机器人消息（左侧带头像） -->
+      <view class="message-row bot-row" wx:elif="{{item.type === 'bot'}}">
+        <image class="avatar" src="/images/bot-avatar.png" />
+        <view class="message-content bot-message">
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <!-- 输入区域 -->
+  <view class="input-container">
+    <input class="input-field" placeholder="请输入你的需求" bindinput="inputChange" value="{{userInput}}" />
+    <button class="send-button" bindtap="sendMessage">发送</button>
+  </view>
+</view>
