@@ -2,7 +2,7 @@
 <view class="main">
 <view class="box">
 
-  <view class="pickId" style="white-space:pre-wrap">取茶号
+  <view class="pickId" style="white-space:pre-wrap">取餐号
 {{orderDetail.pickId}}
   </view>
 

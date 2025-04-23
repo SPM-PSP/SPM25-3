@@ -3,33 +3,7 @@
 	<view class="current-name">{{milktea.name}}</view>
 	<view class="current-des">{{milktea.des}}</view>
 
-	<view class="subtitle">0糖低卡甜菊糖</view>
-	<view class="button-container">
-		<block wx:for="{{zero_buttons}}" wx:key="buttons">
-			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='zeroButtonTap'>{{item.name}}</button>
-		</block>
-	</view>
-
-	<view class="subtitle">绿色餐具</view>
-	<view class="button-container">
-		<block wx:for="{{straw_buttons}}" wx:key="buttons">
-			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='strawButtonTap'>{{item.name}}</button>
-		</block>
-	</view>
-
-	<view class="subtitle">状态</view>
-	<view class="button-container">
-		<block wx:for="{{sugar_buttons}}" wx:key="buttons">
-			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='sugarButtonTap'>{{item.name}}</button>
-		</block>
-	</view>
-
-	<view class="subtitle">冰量</view>
-	<view class="button-container">
-		<block wx:for="{{ice_buttons}}" wx:key="buttons">
-			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='iceButtonTap'>{{item.name}}</button>
-		</block>
-	</view>
+	
 
 	<view class="subtitle">加料</view>
 	<view class="button-container">
@@ -40,6 +14,32 @@
 			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='doubleButtonTap'>{{item.name}}</button>
 		</block>
 	</view>
+
+<view class="options-container">
+  <!-- 时间选择器 -->
+  <view class="time-picker">
+    <text>取餐时间：</text>
+    <picker 
+      mode="time" 
+      value="{{pickupTime}}" 
+      start="{{minTime}}" 
+      end="{{maxTime}}"
+      bindchange="onTimeChange"
+    >
+      <view class="time-input">{{pickupTime}}</view>
+    </picker>
+  </view>
+
+  <!-- 堂食/打包选择 -->
+  <radio-group class="dine-options" bindchange="onDineInOrTakeoutChange">
+    <label class="radio-item">
+      <radio value="0" checked="{{dineInOrTakeout === 0}}" color="#07c160"/> 堂食
+    </label>
+    <label class="radio-item">
+      <radio value="1" checked="{{dineInOrTakeout === 1}}" color="#07c160"/> 打包
+    </label>
+  </radio-group>
+</view>
 </view>
 
 <view class="bottom-bar">

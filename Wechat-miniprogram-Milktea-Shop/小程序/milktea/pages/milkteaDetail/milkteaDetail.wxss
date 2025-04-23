@@ -158,3 +158,42 @@
   color: white;
   font-size: 35rpx;
 }
+/* WXSS 样式 */
+.options-container {
+  padding: 20rpx;
+  background: #fff;
+}
+
+.time-picker {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.time-input {
+  padding: 10rpx 20rpx;
+  border: 1rpx solid #eee;
+  border-radius: 8rpx;
+  color: #333;
+}
+
+.dine-options {
+  display: flex;
+  gap: 40rpx;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+/* 保持与原有按钮风格一致 */
+radio .wx-radio-input {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  font-size: 28rpx;
+}
