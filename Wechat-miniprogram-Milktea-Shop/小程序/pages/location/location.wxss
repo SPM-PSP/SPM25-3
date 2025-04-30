@@ -1,0 +1,24 @@
+/* pages/location/location.wxss */
+.container1 view {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container1 view:nth-child(1) {
+  background-color: lightgreen;
+}
+
+.container1 view:nth-child(2) {
+  background-color: lightskyblue;
+}
+
+.container1 view:nth-child(3) {
+  background-color: lightcoral;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+}
