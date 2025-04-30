@@ -55,10 +55,10 @@ Page({
     
     // 原有加料描述逻辑保持不变
     if (this.data.cheese != 0) {
-      description += ",卤蛋"
+      description += "卤蛋"
     }
     if (this.data.double != 0) {
-      description += ",豆干"
+      description += "豆干"
     }
 
     // 新增取餐信息
