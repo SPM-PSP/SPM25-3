@@ -1,5 +1,5 @@
   <view class='imagesize'>
-    <image src= "/icon/index1.jpg" class="image"></image>
+    <image src= "http://localhost:8080/icon/index1.jpg" class="image"></image>
   </view>
 
 <view class="ipt">

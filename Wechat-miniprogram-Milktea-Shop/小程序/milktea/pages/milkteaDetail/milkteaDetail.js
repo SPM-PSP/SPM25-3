@@ -21,6 +21,7 @@ Page({
       name: "0糖低卡糖￥1"
     }],
     zero: 0,
+
     cheese_buttons: [{
       id: 1,
       name: "卤蛋￥2"
@@ -34,8 +35,8 @@ Page({
     double: 0,
   },
 
-  // 新增时间选择事件
-  onTimeChange(e) {
+   // 新增时间选择事件
+   onTimeChange(e) {
     this.setData({
       pickupTime: e.detail.value
     })
@@ -51,21 +52,18 @@ Page({
   },
 
   generateTotal: function (e) {
-     let description = ""
-    
-    // 原有加料描述逻辑保持不变
+    let description = ""
     if (this.data.cheese != 0) {
       description += "卤蛋"
     }
     if (this.data.double != 0) {
       description += "豆干"
     }
-
-    // 新增取餐信息
-    description += ` | 取餐时间：${this.data.pickupTime}`
-    description += this.data.dineInOrTakeout === 0 ? "（堂食）" : "（打包）"
-
-    this.setData({ total: description })
+     // 新增取餐信息
+     description += ` | 取餐时间：${this.data.pickupTime}`
+     description += this.data.dineInOrTakeout === 0 ? "（堂食）" : "（打包）"
+ 
+     this.setData({ total: description })
   },
 
   minusCount: function (e) {
@@ -83,7 +81,6 @@ Page({
     }
   },
 
-  
   plusCount: function (e) {
     // 计算单价
     var singlePrice = Math.round(this.data.price / this.data.num)
@@ -97,27 +94,6 @@ Page({
     })
   },
 
-  zeroButtonTap: function (e) {
-    console.log(e)
-    var id
-    // 当前价格
-    var oldPrice = Number(this.data.price)
-    if (this.data.zero == 0) {
-      id = 1
-      oldPrice += 1 * Number(this.data.num)
-    } else {
-      id = 0
-      oldPrice -= 1 * Number(this.data.num)
-    }
-    console.log(id)
-    this.data.zero_buttons[0].checked = !this.data.zero_buttons[0].checked
-    this.setData({
-      zero_buttons: this.data.zero_buttons,
-      zero: id,
-      price: oldPrice
-    })
-    this.generateTotal()
-  },
 
   strawButtonTap: function (e) {
     console.log(e)
@@ -232,22 +208,21 @@ Page({
     const defaultTime = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`
 
     const milkteaData = JSON.parse(options.milktea)
+
     this.setData({
       milktea: milkteaData,
       navigateTitle: milkteaData.name,
       price: milkteaData.price,
       pickupTime: defaultTime,  // 初始化取餐时间
-      total: "常规吸管,标准糖,正常冰"
+      total: ""
     })
   },
 
   confirmButtonTap: function (e) {
     const that = this
     const singlePrice = Number(this.data.price / this.data.num)
-    
     base.cart.cartno = Number(base.cart.cartno) + 1
-    
-    // 新增字段传递
+    console.log("supplyno in confirmButtonTap" + base.cart.cartno)
     if (base.cart.add({
       supplyno: base.cart.cartno,
       id: this.data.milktea.id,
@@ -259,7 +234,6 @@ Page({
       dineInOrTakeout: this.data.dineInOrTakeout // 新增
     })) {
       this.setData({ cartNum: base.cart.getNum() })
-      
       base.modal({
         title: '加入成功！',
         content: "跳转到购物车或留在当前页",
@@ -267,7 +241,9 @@ Page({
         cancelText: "留在此页",
         confirmText: "去购物车",
         success: function (res) {
-          if (res.confirm) that.goc()
+          if (res.confirm) {
+            that.goc();
+          }
         }
       })
     }
@@ -329,5 +305,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-  
 })

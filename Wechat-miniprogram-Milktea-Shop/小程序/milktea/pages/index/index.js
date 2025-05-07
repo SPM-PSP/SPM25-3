@@ -41,15 +41,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    wx.cloud.callFunction({
-      name: 'testFunction',
-      success: function (res) {
-        console.log('云函数调用成功', res);
-      },
-      fail: function (err) {
-        console.error('云函数调用失败', err);
-      },
-    });
   },
 
   /**

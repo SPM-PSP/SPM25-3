@@ -26,7 +26,7 @@
 </view>
 <view wx:if="{{plist.length==0||total==0}}" class="null">
   你的购物车空空如也，赶快去点单吧
-  <image src="http://localhost:8080/icon/cart-empty.png" class="img"></image>
+  <image src="cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/cart-empty.png" class="img"></image>
 </view>
 <view class="tool">
   <view class="total">总金额：

@@ -23,7 +23,7 @@ Page({
           wx.showToast({
             title: '支付成功',
             icon: "success",
-            image:"/icon/success.png"
+            image:"cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/success.png"
           })
           //清空购物车缓存
           base.cart.clear();
@@ -69,12 +69,12 @@ Page({
               if (result.data==true)
                 wx.showToast({
                   title: '下单成功！',
-                  image: "/icon/success.png"
+                  image: "cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/success.png"
                 })
               else
                 wx.showToast({
                   title: '下单失败！',
-                  image: "/icon/fail.png"
+                  image: "cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/fail.png"
                 })
             }
           })
@@ -115,7 +115,7 @@ Page({
     var tn = 0;
     var tmpList=[];
     for (var i = 0; i < l.length; i++) {
-      l[i].imgUrl = '/images/id' + l[i].id + '.jpg';
+      l[i].imgUrl = 'cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/static/id' + l[i].id + '.jpg';
       tp += l[i].price * l[i].num;
       tn += l[i].num;
       tmpList[i] = {

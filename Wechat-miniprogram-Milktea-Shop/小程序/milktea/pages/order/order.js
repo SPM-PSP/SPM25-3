@@ -44,7 +44,7 @@ Page({
           for (var i = 0; i < tmp.length; i++) {
             img = []
             for (var j = 0; j < tmp[i].drinkIdList.length; j++) {
-              img[j] = '/images/id' + tmp[i].drinkIdList[j] + '.jpg';
+              img[j] = 'cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/static/id' + tmp[i].drinkIdList[j] + '.jpg';
             }
             tmp[i].img = img;
           }
@@ -98,7 +98,7 @@ Page({
             img = []
             for (var j = 0; j < tmp[i].drinkIdList.length;j++)
             {
-              img[j] = '/images/id' + tmp[i].drinkIdList[j] + '.jpg';
+              img[j] = 'cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/static/id' + tmp[i].drinkIdList[j] + '.jpg';
             }  
             tmp[i].img=img;
           }

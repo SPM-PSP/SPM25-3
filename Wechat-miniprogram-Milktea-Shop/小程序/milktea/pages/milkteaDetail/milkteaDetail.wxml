@@ -1,9 +1,7 @@
 <view class="main">
-	<image wx:if="{{milktea}}" src="/images/id{{milktea.id}}.jpg" class="current-img"></image>
-	<view class="current-name">{{milktea.name}}</view>
-	<view class="current-des">{{milktea.des}}</view>
-
-	
+  <image wx:if="{{milktea}}" src="cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/static/id{{milktea.id}}.jpg" class="current-img"></image>
+  <view class="current-name" style="height: 104rpx; display: block; box-sizing: border-box">{{milktea.name}}</view>
+  <view class="current-des" style="height: 68rpx; display: block; box-sizing: border-box">{{milktea.des}}</view>
 
 	<view class="subtitle">加料</view>
 	<view class="button-container">
@@ -14,8 +12,7 @@
 			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='doubleButtonTap'>{{item.name}}</button>
 		</block>
 	</view>
-
-<view class="options-container">
+  <view class="options-container">
   <!-- 时间选择器 -->
   <view class="time-picker">
     <text>取餐时间：</text>

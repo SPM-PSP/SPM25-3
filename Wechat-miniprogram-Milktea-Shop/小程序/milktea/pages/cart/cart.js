@@ -33,7 +33,7 @@ Page({
     var l = base.cart.getList();
     for (var i = 0; i < l.length; i++) {
       // l[i].img = '/images/img' + l[i].id + '.png';
-      l[i].img = 'http://localhost:8080/images/id' + l[i].id + '.jpg';
+      l[i].img = 'cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/static/id' + l[i].id + '.jpg';
       l[i].index = i;
     }
     this.setData({ plist: l });
@@ -56,7 +56,7 @@ Page({
     var l = base.cart.getList();
     for (var i = 0; i < l.length; i++) {
       // l[i].img = '/images/img' + l[i].id + '.png';
-      l[i].img = 'http://localhost:8080/images/id' + l[i].id + '.jpg';
+      l[i].img = 'cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/static/id' + l[i].id + '.jpg';
       l[i].index = i;
     }
     this.setData({ plist: l });
@@ -128,7 +128,7 @@ Page({
     } else {
       wx.showToast({
         title: '购物车无商品',
-        image: "http://localhost:8080/icon/empty2.png"
+        image: "cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/empty2.png"
       })
     }
   },

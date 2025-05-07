@@ -39,7 +39,7 @@ Page({
     //for (var i = 0; i < tmp.length; i++) {
       var img=[];
       for (var j = 0; j < tmp.drinkList.length; j++) {
-        tmp.drinkList[j].img = '/images/id' + tmp.drinkList[j].drinkId + '.jpg';
+        tmp.drinkList[j].img = 'cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/static/id' + tmp.drinkList[j].drinkId + '.jpg';
       }
       
       //tmp[i].drinkList = img;
