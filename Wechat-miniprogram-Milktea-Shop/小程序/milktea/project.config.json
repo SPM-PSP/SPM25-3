@@ -48,5 +48,6 @@
     "tabIndent": "insertSpaces",
     "tabSize": 2
   },
-  "testRoot": "minitest/"
+  "testRoot": "minitest/",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
 }

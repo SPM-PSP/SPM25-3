@@ -73,6 +73,5 @@
       "desc": "用于生成二维码"
     }
   },
-  "requiredBackgroundModes": ["fetch"],
   "sitemapLocation": "sitemap.json"
   }

@@ -1,21 +1,21 @@
 <view class="title">
 <image src="cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/java.png" class="java-img"></image>
 <view class="tex">
-伪装喜茶
+锦食江安
 </view>
 </view>
 
 <!-- 轮播图展示海报 -->
 <swiper autoplay="true" indicator-dots="true" indicator-color="pink" indicator-active-color="orange" interval="3000" duration="500" class="swiperTop">
-	<swiper-item>
-		<image src="/banner/bnr1.jpg" class="bnr-img" mode="widthFix"></image>
-	</swiper-item>
-	<swiper-item>
-		<image src="/banner/bnr2.jpg" class="bnr-img" mode="widthFix"></image>
-	</swiper-item>
-	<swiper-item>
-		<image src="/banner/bnr3.jpg" class="bnr-img" mode="widthFix"></image>
-	</swiper-item>
+    <swiper-item>
+        <image src="/banner/bnr1.jpg" class="bnr-img" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/banner/bnr2.jpg" class="bnr-img" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/banner/bnr3.jpg" class="bnr-img" mode="widthFix"></image>
+    </swiper-item>
 </swiper>
 
 <view class="recommend-bar">

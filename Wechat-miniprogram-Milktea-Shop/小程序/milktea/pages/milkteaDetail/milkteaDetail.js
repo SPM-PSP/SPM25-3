@@ -214,6 +214,10 @@ Page({
       navigateTitle: milkteaData.name,
       price: milkteaData.price,
       pickupTime: defaultTime,  // 初始化取餐时间
+      dineInOrTakeout: 0  // 确保默认堂食
+  }, () => {
+    // 在回调中生成初始描述
+    this.generateTotal()
       total: ""
     })
   },

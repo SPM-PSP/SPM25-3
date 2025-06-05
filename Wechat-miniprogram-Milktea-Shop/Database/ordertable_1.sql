@@ -1,0 +1,6 @@
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('周杰伦', '0002', '红油小面', '卤蛋 | 取餐时间：10:40（堂食）', 27, 1, '2025-03-12 09:42:06', 127, 135);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('周杰伦', '0014', '肉夹馍', '卤蛋 | 取餐时间：10:40（堂食）', 23, 2, '2025-04-23 10:11:03', 128, 136);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('周杰伦', '0001', '烧麦', '豆干 | 取餐时间：10:44（堂食）', 30, 1, '2025-04-23 10:17:12', 129, 137);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('周杰伦', '0018', '狮子头', '豆干 | 取餐时间：10:49（打包）', 20, 1, '2025-04-23 10:19:37', 130, 138);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('周杰伦', '0012', '包子', '卤蛋 | 取餐时间：10:50（堂食）', 27, 1, '2025-04-23 10:20:23', 131, 139);
+INSERT INTO test.ordertable (userName, drinkId, drinkName, drinkInfo, drinkPrice, drinkNum, orderTime, orderId, pickId) VALUES ('周杰伦', '0008', '炸酱面', '豆干 | 取餐时间：10:51（打包）', 26, 1, '2025-04-23 10:21:14', 132, 140);

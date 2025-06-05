@@ -1,10 +1,16 @@
-<!--pages/location/location.wxml-->
+<!-- pages/location/location.wxml -->
 <button bindtap="refreshLocation">刷新位置</button>
-<button bindtap="addGpsData">添加GPS数据</button>
 <text>昵称：{{nickName}}\n</text>
 <text>经度：{{longitude}}\n</text>
 <text>纬度：{{latitude}}\n</text>
 <text>地点：{{location}}\n</text>
+<view class="relative-positions">
+  <block wx:for="{{relativePositions}}" wx:key="mname">
+    <text>{{item.mname}} - 距离：{{item.distance}}</text>
+    
+  </block>
+  <text>地点\n</text>
+</view>
 <view class="container">
   <map 
     id="myMap" 

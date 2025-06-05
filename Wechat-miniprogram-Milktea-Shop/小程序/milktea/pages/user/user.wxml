@@ -12,7 +12,7 @@
 <view class="ub">
 
   <view class="item" >
-    <view class="image"><image src="cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/index3.png" class="image"></image></view>
+    <view class="image"><image src="cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/index2.png" class="image"></image></view>
     <view class="text" >
         <navigator url="../user/user/changeSecret/changeSecret" open-type="navigate" hover-class="navigator-hover">修改密码</navigator>
     </view>
@@ -49,15 +49,15 @@
   </view>
 
   <view class="item" >
-    <view class="image"><image src="hcloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/index7.png" class="image"></image></view>
+    <view class="image"><image src="cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/aichat.png" class="image"></image></view>
     <view class="text" >
-        <navigator url="../Aichat/Aichat" open-type="navigate" hover-class="navigator-hover">AI聊天</navigator>
+        <navigator url="../Aichat/Aichat" open-type="navigate" hover-class="navigator-hover">饮食管家</navigator>
     </view>
   </view>
 
   <view class="item" >
     <view class="image">
-  <image src="cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/index3.png" class="image"></image>
+  <image src="cloud://cloud1-6guajnqs4942a51f.636c-cloud1-6guajnqs4942a51f-1346681830/icon/index5.png" class="image"></image>
 </view>
     <view class="text" bindtap="clearInfo">退出</view>
   </view>

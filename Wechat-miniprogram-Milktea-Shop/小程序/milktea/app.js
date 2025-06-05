@@ -6,7 +6,7 @@ App({
       wx.cloud.init({
         // 这里填写你创建的云开发环境 ID
         env: 'cloud1-6guajnqs4942a51f', 
-        traceUser: true,
+        traceUser: false,
       });
     }
 
